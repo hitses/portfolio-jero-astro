@@ -1,0 +1,51 @@
+---
+import ExperienceItem from './ExperienceItem.astro'
+
+const experience = [
+  {
+    date: 'July 2023 | Current',
+    title: 'Mid Backend developer in Muchosol',
+    description:
+      'I add functionality improvements and fixes to existing applications and create new developments on the backend with NestJS with Express and Typescript.',
+    link: 'https://www.muchosol.co.uk/'
+  },
+  {
+    date: 'June 2022 | July 2023',
+    title: 'Mid Backend developer in Capgemini',
+    description:
+      'I carried out implementations and functionality improvements in the backend. The technology I used the most was Node.JS along with Express. I also used serverless for AWS.',
+    link: 'https://www.capgemini.com/'
+  },
+  {
+    date: 'July 2021 | June 2022',
+    title: 'Mid Fullstack developer in Teralco Group',
+    description:
+      'I created a server for a US client in the medical sector with Node.JS, Express and MongoDB and renovated the frontend of a well-known fashion brand with Angular 2+.',
+    link: 'https://teralco.com/en/'
+  },
+  {
+    date: 'October 2020 | July 2021',
+    title: 'Junior Fullstack developer in NTT Data',
+    description:
+      'I was in a long-term project with Node.JS and Express in the backend, MongoDB, PostgreSQL, DynamoDB and MySQL as DBs, Angular in the frontend and React in mobility, I used Python to maintain ETLs and all that in an AWS cloud environment .',
+    link: 'https://es.nttdata.com/'
+  },
+  {
+    date: 'October 2020 | July 2021',
+    title: 'Junior Fullstack developer in Lotería el Negrito',
+    description:
+      'I worked with Node.JS and Express on the backend and Angular +2 on the frontend, implementing functionalities for existing projects. I used MySQL as a database and Typescript in the development of a new project.',
+    link: 'https://www.loteriaelnegrito.com/'
+  }
+]
+---
+
+<ol class='relative border-s border-gray-200 dark:border-gray-700 ml-3'>
+  {
+    experience.map(item => (
+      <li class='mb-10 ms-4'>
+        <ExperienceItem {...item} />
+      </li>
+    ))
+  }
+</ol>
